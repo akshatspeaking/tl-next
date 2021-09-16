@@ -16,7 +16,7 @@ export default function SubmitForm({
 
   function saveScore() {
     setIsLoading(true);
-    fetch("http://localhost:3000/api/score", {
+    fetch("https://tl-next.vercel.app/api/score", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

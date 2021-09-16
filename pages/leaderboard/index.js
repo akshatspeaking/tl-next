@@ -49,7 +49,7 @@ export default function LeaderboardPage({ data }) {
 }
 
 export const getServerSideProps = async (ctx) => {
-  const res = await fetch("http://localhost:3000/api/score");
+  const res = await fetch("https://tl-next.vercel.app/api/score");
   const data = await res.json();
   return {
     props: {
